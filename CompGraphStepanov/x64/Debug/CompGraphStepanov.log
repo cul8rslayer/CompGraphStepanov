@@ -1,0 +1,4 @@
+﻿  CompGraphStepanov.cpp
+C:\Users\stepa\source\repos\CompGraphStepanov\CompGraphStepanov\CompGraphStepanov.cpp(25,52): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\stepa\source\repos\CompGraphStepanov\CompGraphStepanov\CompGraphStepanov.cpp(25,31): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+  CompGraphStepanov.vcxproj -> C:\Users\stepa\source\repos\CompGraphStepanov\x64\Debug\CompGraphStepanov.exe
