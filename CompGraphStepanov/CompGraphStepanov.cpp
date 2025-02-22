@@ -1,4 +1,4 @@
-﻿#define GLWF
+#define GLWF
 #define GLEW
 
 #include "GL/glew.h"
@@ -7,21 +7,18 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define PI 3.14159265359f // это число Пи
+#define PI 3.14159265359
 
 void drawHexagon() {
-    float radius = 0.5f; 
+    float radius = 0.5;
 
     glBegin(GL_TRIANGLE_FAN);
 
-    //зелёный
-    glColor3f(0.4f, 1.0f, 0.4f);
-    glVertex2f(0.0f, 0.0f);
+    glColor3f(0.4, 1.0, 0.4);
+    glVertex2f(0.0, 0.0);
 
-    //красный
-    glColor3f(1.0f, 0.2f, 0.3f);
-    for (int i = 0; i <= 6; i++) { // 6 вершин + первая точка замыкает фигуру
-        float angle = i * PI / 3.0f;
+    for (int i = 0; i <= 6; i++) {
+        float angle = i * PI / 3.0;
         glVertex2f(cos(angle) * radius, sin(angle) * radius);
     }
 
@@ -49,10 +46,10 @@ int main() {
     }
 
     while (!glfwWindowShouldClose(window)) {
-        glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
+        glClearColor(1.0, 0.2, 0.3, 1.0);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        drawHexagon(); // тут получается шестиугольник
+        drawHexagon(); 
 
         glfwSwapBuffers(window);
         glfwPollEvents();
