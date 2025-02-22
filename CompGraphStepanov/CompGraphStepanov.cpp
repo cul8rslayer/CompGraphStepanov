@@ -7,18 +7,18 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define PI 3.14159265359f // Определяем число Пи
+#define PI 3.14159265359f // это число Пи
 
 void drawHexagon() {
-    float radius = 0.5f; // Радиус шестиугольника
+    float radius = 0.5f; 
 
     glBegin(GL_TRIANGLE_FAN);
 
-    // Центр (зелёный)
+    //зелёный
     glColor3f(0.4f, 1.0f, 0.4f);
     glVertex2f(0.0f, 0.0f);
 
-    // Вершины (красный)
+    //красный
     glColor3f(1.0f, 0.2f, 0.3f);
     for (int i = 0; i <= 6; i++) { // 6 вершин + первая точка замыкает фигуру
         float angle = i * PI / 3.0f;
@@ -52,7 +52,7 @@ int main() {
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        drawHexagon(); // Рисуем шестиугольник
+        drawHexagon(); // тут получается шестиугольник
 
         glfwSwapBuffers(window);
         glfwPollEvents();
