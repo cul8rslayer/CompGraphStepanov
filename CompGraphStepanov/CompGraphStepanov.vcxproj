@@ -133,6 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="classworkstepanovasub232.cpp" />
     <ClCompile Include="CompGraphStepanov.cpp" />
     <ClCompile Include="glew-2.1.0\src\glew.c" />
   </ItemGroup>
